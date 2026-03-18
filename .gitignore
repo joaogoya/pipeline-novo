@@ -1,0 +1,26 @@
+# WordPress .gitignore personalizado
+
+# Pastas a ignorar
+languages/
+upgrade/
+upgrade-temp-backup/
+
+# Em themes/, ignorar tudo exceto o tema pipeline
+themes/*
+!themes/pipeline/
+
+# No tema pipeline, ignorar node_modules (futuramente)
+themes/pipeline/node_modules/
+
+# Arquivos e pastas adicionais sugeridos para ignorar
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+cache/
+temp/
+vendor/
+*.bak
+*.tmp
+*.swp
