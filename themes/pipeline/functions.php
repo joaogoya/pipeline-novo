@@ -245,6 +245,6 @@ add_action('pre_get_posts', 'search_filter');
 /* Fim search only posts */
 
 
-require('functions/custom-posts.php');
+//require('functions/custom-posts.php');
 require('functions/img_handle/index.php');
 require('functions/acf_utils.php');
