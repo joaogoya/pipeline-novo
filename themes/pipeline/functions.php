@@ -248,6 +248,3 @@ add_action('pre_get_posts', 'search_filter');
 require('functions/custom-posts.php');
 require('functions/img_handle/index.php');
 require('functions/acf_utils.php');
-require('functions/polylang/index.php');
-require('functions/Videos/index.php');
-require('functions/lightbox/index.php');
