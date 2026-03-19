@@ -24,3 +24,20 @@ $sm: '(max-width: 767px)';
 $lsm: 'only screen and (min-width: 576px) and (max-width: 767px)';
 $xsm: '(max-width: 575px)';
 $tiny: '(max-width: 399px)';
+
+
+// Margins e paddings--
+$directions: (
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right"
+);
+
+@for $i from 0 through 40 { // De 0 até 200px (40 * 5)
+    $val: $i * 5;
+    @each $char, $dir in $directions {
+        .m#{$char}-#{$val} { margin-#{$dir}: #{$val}px !important; }
+        .p#{$char}-#{$val} { padding-#{$dir}: #{$val}px !important; }
+    }
+}

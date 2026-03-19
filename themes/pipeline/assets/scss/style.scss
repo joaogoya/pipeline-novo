@@ -1,55 +1,35 @@
 /*-----------------------------------------------------------------------------------
     Template Name: Onitir IT solution template
-    Template URI: https://androthemes.com/themes/html/onitir
-    Author: AndroThemes
-    Template URI: http://androthemes.com
-    Version: 1.0
-
-    Note: This is Main Style Scss File.
------------------------------------------------------------------------------------
-    CSS INDEX
-    ===================
-    01. Common
-    02. Header
-    03. Banner
-    04. About
-    05. Services
-    06. Call to action
-    07. Features Boxes
-    08. Video
-    09. Team
-    10. Skill
-    11. Portfolio
-    12. Testimonial
-    13. Blog
-    14. Contact
-    15. Framework
-    16. Counter
-    17. Breadcrumb
-    18. Sidebar
-    19. Faq
-    20. Footer
+    Note: Main Style Scss - Globalized Version
 -----------------------------------------------------------------------------------*/
 
-@import 'variables';
-@import 'mixin';
-@import 'common';
-@import 'header';
-@import 'banner';
-@import 'about';
-@import 'services';
-@import 'cta';
-@import 'features';
-@import 'video';
-@import 'team';
-@import 'skill';
-@import 'portfolio';
-@import 'testimonial';
-@import 'blog';
-@import 'contact';
-@import 'framework';
-@import 'counter';
-@import 'breadcrumb';
-@import 'sidebar';
-@import 'faq';
-@import 'footer';
+// 1. CARGA GLOBAL (O pulo do gato)
+// Usamos @forward para que 'variables' e 'mixin' fiquem disponíveis 
+// para qualquer um que der @use neste arquivo mestre.
+@forward 'variables';
+@forward 'mixin';
+
+// 2. IMPORTAÇÃO DOS COMPONENTES
+// Aqui usamos @use 'as *' para carregar os estilos na ordem da cascata CSS
+@use 'variables' as *;
+@use 'mixin' as *;
+@use 'common' as *;
+@use 'header' as *;
+@use 'banner' as *;
+@use 'about' as *;
+@use 'services' as *;
+@use 'cta' as *;
+@use 'features' as *;
+@use 'video' as *;
+@use 'team' as *;
+@use 'skill' as *;
+@use 'portfolio' as *;
+@use 'testimonial' as *;
+@use 'blog' as *;
+@use 'contact' as *;
+@use 'framework' as *;
+@use 'counter' as *;
+@use 'breadcrumb' as *;
+@use 'sidebar' as *;
+@use 'faq' as *;
+@use 'footer' as *;

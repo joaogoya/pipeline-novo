@@ -16,12 +16,34 @@ const paths = {
       './assets/css/pe-icon-7-stroke.css',
       './assets/css/magnific-popup.css',
       './assets/css/slick.css',
-      './assets/css/meanmenu.min.css',
-      './assets/css/default.css',
-      './assets/css/style.css'
+      './assets/css/meanmenu.min.css'
     ],
-    src: './assets/css/template_style.scss', 
-    watch: './assets/css/**/*.{scss,css}',      
+   
+    src: [
+      './assets/scss/_variables.scss', 
+      './assets/scss/_mixin.scss',    
+      './assets/scss/_common.scss',    
+      './assets/scss/_header.scss',
+      './assets/scss/_banner.scss',
+      './assets/scss/_about.scss',
+      './assets/scss/_services.scss',
+      './assets/scss/_cta.scss',
+      './assets/scss/_features.scss',
+      './assets/scss/_video.scss',
+      './assets/scss/_team.scss',
+      './assets/scss/_skill.scss',
+      './assets/scss/_portfolio.scss',
+      './assets/scss/_testimonial.scss',
+      './assets/scss/_blog.scss',
+      './assets/scss/_contact.scss',
+      './assets/scss/_framework.scss',
+      './assets/scss/_counter.scss',
+      './assets/scss/_breadcrumb.scss',
+      './assets/scss/_sidebar.scss',
+      './assets/scss/_faq.scss',
+      './assets/scss/_footer.scss'
+    ],
+    watch: './assets/scss/**/*.scss',
     dest: './assets/dist/'
   },
 scripts: {
@@ -56,11 +78,14 @@ scripts: {
 };
 
 function buildCss() {
-  return gulp.src([...paths.styles.vendors, paths.styles.src])
+  // O Gulp vai ler todos os arquivos da lista na ordem
+  return gulp.src([...paths.styles.vendors, ...paths.styles.src])
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('style.min.css')) // Junta tudo primeiro (desencapsula)
+    .pipe(sass({
+        quietDeps: true // Silencia avisos de @import se houver algum nos vendors
+    }).on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(concat('style.min.css'))
     .pipe(cleanCSS({ level: 2, compatibility: 'ie8' }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.styles.dest));
