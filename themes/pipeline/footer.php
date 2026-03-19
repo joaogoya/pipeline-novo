@@ -132,18 +132,18 @@
 
 <!-- footer onitir -->
 <!--====== jquery js ======-->
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/vendor/modernizr-3.6.0.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/popper.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/slick.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/isotope.pkgd.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/jquery.inview.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/jquery.countTo.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/jquery.easypiechart.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/jquery.meanmenu.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/onitir-html/assets/js/main.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/popper.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/isotope.pkgd.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.inview.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.countTo.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.easypiechart.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.meanmenu.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
 </body>
 
