@@ -132,7 +132,7 @@
 
 <!-- footer onitir -->
 <!--====== jquery js ======-->
-<script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<!-- <script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/modernizr-3.6.0.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/popper.min.js"></script>
@@ -143,7 +143,9 @@
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.countTo.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.easypiechart.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.meanmenu.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script> -->
+
+<?php wp_footer(); ?>
 
 </body>
 
